@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sidrería - Cervecera Ander · Deusto, Bilbao</title>
+<style>
+:root{--bg:#faf5ec;--fg:#2b1d14;--mut:#6d5a4b;--card:#fff;--ac:#8c1c1c;--ac2:#b8862b;--bd:#e6d9c4;--hero:#3a1d12;--hf:#faf5ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c130d;--fg:#f3e9d9;--mut:#bba78f;--card:#271a12;--ac:#e0674f;--ac2:#d9a441;--bd:#3d2b1e;--hero:#120a06}}
+:root[data-theme="dark"]{--bg:#1c130d;--fg:#f3e9d9;--mut:#bba78f;--card:#271a12;--ac:#e0674f;--ac2:#d9a441;--bd:#3d2b1e;--hero:#120a06}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--hero);color:var(--hf);text-align:center;padding:56px 20px 64px;position:relative;overflow:hidden}
+.barrel{width:120px;height:120px;border-radius:50%;margin:0 auto 22px;background:radial-gradient(circle,#c98f4a 0 18%,#a56b2f 19% 40%,#7a4a1f 41% 62%,#5a3416 63% 100%);border:6px solid #3a2210;box-shadow:0 0 0 4px var(--ac2);position:relative}
+.barrel:after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px;border-radius:50%;background:#2a170a;border:3px solid var(--ac2)}
+.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:12px;color:var(--ac2);font-family:system-ui,sans-serif}
+h1{font-size:clamp(32px,7vw,56px);line-height:1.1;margin:10px 0 12px}
+.hero p{max-width:540px;margin:0 auto 26px;opacity:.9}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;font-family:system-ui,sans-serif}
+.btn{padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;border:2px solid var(--ac2)}
+.btn.p{background:var(--ac2);color:#2b1d14}
+.btn.s{color:var(--hf)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:5;font-family:system-ui,sans-serif;font-size:14px}
+nav .wrap{display:flex;gap:22px;justify-content:center;padding:12px 20px;overflow-x:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--mut);font-weight:600}
+section{padding:54px 0}
+h2{font-size:30px;margin:0 0 6px}
+h2+p.sub{color:var(--mut);margin:0 0 26px}
+.rule{width:56px;height:3px;background:var(--ac);margin:10px 0 18px;border:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:20px;color:var(--ac)}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.tag{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac2);font-weight:700}
+.rate{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:22px;font-family:system-ui,sans-serif}
+.rate b{font-size:44px;font-family:Georgia,serif;color:var(--ac)}
+.stars{color:var(--ac2);letter-spacing:3px;font-size:20px}
+blockquote{margin:0;background:var(--card);border-left:4px solid var(--ac2);padding:16px 20px;border-radius:0 12px 12px 0;color:var(--mut);font-style:italic}
+.band{background:var(--card);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px;font-family:system-ui,sans-serif}
+.info h3{font-family:Georgia,serif;margin:0 0 6px;font-size:20px}
+.info p{margin:0;color:var(--mut);font-size:15px}
+.info a{color:var(--ac);font-weight:600}
+footer{text-align:center;padding:30px 20px 40px;color:var(--mut);font:14px system-ui,sans-serif}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="barrel" role="img" aria-label="Tapa de tonel de sidra"></div>
+  <div class="eyebrow">Ongi etorri · Deusto, Bilbao</div>
+  <h1>Sidrería – Cervecera Ander</h1>
+  <p>Comedor familiar con terraza y cocina tradicional del País Vasco. Cachopo, chuletón, bacalao y sidra de toda la vida.</p>
+  <div class="btns">
+    <a class="btn p" href="tel:+34944476666">Reservar: 944 47 66 66</a>
+    <a class="btn s" href="https://www.google.com/maps/search/?api=1&amp;query=Andaluzia+Kalea+1+48015+Bilbao" target="_blank" rel="noopener">Cómo llegar</a>
+  </div>
+</header>
+
+<nav><div class="wrap"><a href="#carta">Carta</a><a href="#menus">Menús</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a></div></nav>
+
+<section id="carta"><div class="wrap">
+  <h2>Nuestra cocina</h2><hr class="rule">
+  <p class="sub">Recetas tradicionales y raciones generosas, para compartir o para ir con hambre.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">El favorito</span><h3>Cachopo</h3><p>El plato más pedido de la casa. Abundante, ideal para ir con buen apetito.</p></div>
+    <div class="card"><span class="tag">A la brasa</span><h3>Chuletón y entrecot</h3><p>Carne para compartir entre dos, al punto y con su guarnición.</p></div>
+    <div class="card"><span class="tag">Tradición</span><h3>Bacalao</h3><p>Receta vasca de bacalao, uno de los platos más elogiados por quienes nos visitan.</p></div>
+    <div class="card"><span class="tag">Para compartir</span><h3>Codillo</h3><p>Contundente y pensado para mesa de dos o más comensales.</p></div>
+    <div class="card"><span class="tag">Arroces</span><h3>Paella de tierra y mar</h3><p>Generosa en ración y sabor.</p></div>
+    <div class="card"><span class="tag">Para empezar</span><h3>Ensaladilla rusa</h3><p>Clásica, casera y perfecta como entrante.</p></div>
+  </div>
+</div></section>
+
+<section id="menus" class="band"><div class="wrap">
+  <h2>Menús y sidra</h2><hr class="rule">
+  <div class="grid">
+    <div class="card"><h3>Menú del día</h3><p>Opción entre semana para comer bien y sin complicaciones. Consulta el menú de hoy por teléfono.</p></div>
+    <div class="card"><h3>Menú de fin de semana</h3><p>Menús especiales para celebraciones, cumpleaños y comidas en grupo.</p></div>
+    <div class="card"><h3>Sidra</h3><p>Sidrería de toda la vida, con la tapa del tonel presidiendo el comedor. Y también cerveza, como manda el nombre.</p></div>
+  </div>
+</div></section>
+
+<section id="opiniones"><div class="wrap">
+  <h2>Lo que dicen de nosotros</h2><hr class="rule">
+  <div class="rate"><b>4,0</b><div><div class="stars" aria-hidden="true">★★★★☆</div><div>725 opiniones en Google</div></div></div>
+  <div class="grid">
+    <blockquote>Trato excelente, comida excepcional, cachopo y bacalao exquisitos.</blockquote>
+    <blockquote>La paella de tierra y mar generosa y muy rica, igual que la ensaladilla rusa.</blockquote>
+    <blockquote>Servicio maravilloso y amigable. Sin duda volveré.</blockquote>
+  </div>
+</div></section>
+
+<section id="contacto" class="band"><div class="wrap">
+  <h2>Ven a vernos</h2><hr class="rule">
+  <div class="info">
+    <div><h3>Dirección</h3><p>Andaluzia Kalea, 1<br>Deusto, 48015 Bilbao, Bizkaia</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Andaluzia+Kalea+1+48015+Bilbao" target="_blank" rel="noopener">Abrir en Google Maps →</a></p></div>
+    <div><h3>Reservas</h3><p>Llámanos al<br><a href="tel:+34944476666">944 47 66 66</a></p></div>
+    <div><h3>Horario</h3><p>Cerramos a las 00:00.<br>Confirma el horario de cada día por teléfono.</p></div>
+  </div>
+</div></section>
+
+<footer>© Sidrería – Cervecera Ander · Andaluzia Kalea, 1, Bilbao</footer>
+</body>
+</html>
