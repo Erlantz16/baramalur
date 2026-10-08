@@ -1,108 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sidrería - Cervecera Ander · Deusto, Bilbao</title>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bar Amalur · Deusto, Bilbao</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
-:root{--bg:#faf5ec;--fg:#2b1d14;--mut:#6d5a4b;--card:#fff;--ac:#8c1c1c;--ac2:#b8862b;--bd:#e6d9c4;--hero:#3a1d12;--hf:#faf5ec;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c130d;--fg:#f3e9d9;--mut:#bba78f;--card:#271a12;--ac:#e0674f;--ac2:#d9a441;--bd:#3d2b1e;--hero:#120a06}}
-:root[data-theme="dark"]{--bg:#1c130d;--fg:#f3e9d9;--mut:#bba78f;--card:#271a12;--ac:#e0674f;--ac2:#d9a441;--bd:#3d2b1e;--hero:#120a06}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
-a{color:inherit}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-header.hero{background:var(--hero);color:var(--hf);text-align:center;padding:56px 20px 64px;position:relative;overflow:hidden}
-.barrel{width:120px;height:120px;border-radius:50%;margin:0 auto 22px;background:radial-gradient(circle,#c98f4a 0 18%,#a56b2f 19% 40%,#7a4a1f 41% 62%,#5a3416 63% 100%);border:6px solid #3a2210;box-shadow:0 0 0 4px var(--ac2);position:relative}
-.barrel:after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px;border-radius:50%;background:#2a170a;border:3px solid var(--ac2)}
-.eyebrow{letter-spacing:.25em;text-transform:uppercase;font-size:12px;color:var(--ac2);font-family:system-ui,sans-serif}
-h1{font-size:clamp(32px,7vw,56px);line-height:1.1;margin:10px 0 12px}
-.hero p{max-width:540px;margin:0 auto 26px;opacity:.9}
-.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;font-family:system-ui,sans-serif}
-.btn{padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px;border:2px solid var(--ac2)}
-.btn.p{background:var(--ac2);color:#2b1d14}
-.btn.s{color:var(--hf)}
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--bd);z-index:5;font-family:system-ui,sans-serif;font-size:14px}
-nav .wrap{display:flex;gap:22px;justify-content:center;padding:12px 20px;overflow-x:auto;white-space:nowrap}
-nav a{text-decoration:none;color:var(--mut);font-weight:600}
-section{padding:54px 0}
-h2{font-size:30px;margin:0 0 6px}
-h2+p.sub{color:var(--mut);margin:0 0 26px}
-.rule{width:56px;height:3px;background:var(--ac);margin:10px 0 18px;border:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px}
-.card h3{margin:0 0 6px;font-size:20px;color:var(--ac)}
-.card p{margin:0;color:var(--mut);font-size:15px}
-.tag{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ac2);font-weight:700}
-.rate{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:22px;font-family:system-ui,sans-serif}
-.rate b{font-size:44px;font-family:Georgia,serif;color:var(--ac)}
-.stars{color:var(--ac2);letter-spacing:3px;font-size:20px}
-blockquote{margin:0;background:var(--card);border-left:4px solid var(--ac2);padding:16px 20px;border-radius:0 12px 12px 0;color:var(--mut);font-style:italic}
-.band{background:var(--card);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd)}
-.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px;font-family:system-ui,sans-serif}
-.info h3{font-family:Georgia,serif;margin:0 0 6px;font-size:20px}
-.info p{margin:0;color:var(--mut);font-size:15px}
-.info a{color:var(--ac);font-weight:600}
-footer{text-align:center;padding:30px 20px 40px;color:var(--mut);font:14px system-ui,sans-serif}
-</style>
-</head>
-<body>
-<header class="hero">
-  <div class="barrel" role="img" aria-label="Tapa de tonel de sidra"></div>
-  <div class="eyebrow">Ongi etorri · Deusto, Bilbao</div>
-  <h1>Sidrería – Cervecera Ander</h1>
-  <p>Comedor familiar con terraza y cocina tradicional del País Vasco. Cachopo, chuletón, bacalao y sidra de toda la vida.</p>
-  <div class="btns">
-    <a class="btn p" href="tel:+34944476666">Reservar: 944 47 66 66</a>
-    <a class="btn s" href="https://www.google.com/maps/search/?api=1&amp;query=Andaluzia+Kalea+1+48015+Bilbao" target="_blank" rel="noopener">Cómo llegar</a>
-  </div>
-</header>
-
-<nav><div class="wrap"><a href="#carta">Carta</a><a href="#menus">Menús</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a></div></nav>
-
-<section id="carta"><div class="wrap">
-  <h2>Nuestra cocina</h2><hr class="rule">
-  <p class="sub">Recetas tradicionales y raciones generosas, para compartir o para ir con hambre.</p>
-  <div class="grid">
-    <div class="card"><span class="tag">El favorito</span><h3>Cachopo</h3><p>El plato más pedido de la casa. Abundante, ideal para ir con buen apetito.</p></div>
-    <div class="card"><span class="tag">A la brasa</span><h3>Chuletón y entrecot</h3><p>Carne para compartir entre dos, al punto y con su guarnición.</p></div>
-    <div class="card"><span class="tag">Tradición</span><h3>Bacalao</h3><p>Receta vasca de bacalao, uno de los platos más elogiados por quienes nos visitan.</p></div>
-    <div class="card"><span class="tag">Para compartir</span><h3>Codillo</h3><p>Contundente y pensado para mesa de dos o más comensales.</p></div>
-    <div class="card"><span class="tag">Arroces</span><h3>Paella de tierra y mar</h3><p>Generosa en ración y sabor.</p></div>
-    <div class="card"><span class="tag">Para empezar</span><h3>Ensaladilla rusa</h3><p>Clásica, casera y perfecta como entrante.</p></div>
-  </div>
-</div></section>
-
-<section id="menus" class="band"><div class="wrap">
-  <h2>Menús y sidra</h2><hr class="rule">
-  <div class="grid">
-    <div class="card"><h3>Menú del día</h3><p>Opción entre semana para comer bien y sin complicaciones. Consulta el menú de hoy por teléfono.</p></div>
-    <div class="card"><h3>Menú de fin de semana</h3><p>Menús especiales para celebraciones, cumpleaños y comidas en grupo.</p></div>
-    <div class="card"><h3>Sidra</h3><p>Sidrería de toda la vida, con la tapa del tonel presidiendo el comedor. Y también cerveza, como manda el nombre.</p></div>
-  </div>
-</div></section>
-
-<section id="opiniones"><div class="wrap">
-  <h2>Lo que dicen de nosotros</h2><hr class="rule">
-  <div class="rate"><b>4,0</b><div><div class="stars" aria-hidden="true">★★★★☆</div><div>725 opiniones en Google</div></div></div>
-  <div class="grid">
-    <blockquote>Trato excelente, comida excepcional, cachopo y bacalao exquisitos.</blockquote>
-    <blockquote>La paella de tierra y mar generosa y muy rica, igual que la ensaladilla rusa.</blockquote>
-    <blockquote>Servicio maravilloso y amigable. Sin duda volveré.</blockquote>
-  </div>
-</div></section>
-
-<section id="contacto" class="band"><div class="wrap">
-  <h2>Ven a vernos</h2><hr class="rule">
-  <div class="info">
-    <div><h3>Dirección</h3><p>Andaluzia Kalea, 1<br>Deusto, 48015 Bilbao, Bizkaia</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Andaluzia+Kalea+1+48015+Bilbao" target="_blank" rel="noopener">Abrir en Google Maps →</a></p></div>
-    <div><h3>Reservas</h3><p>Llámanos al<br><a href="tel:+34944476666">944 47 66 66</a></p></div>
-    <div><h3>Horario</h3><p>Cerramos a las 00:00.<br>Confirma el horario de cada día por teléfono.</p></div>
-  </div>
-</div></section>
-
-<footer>© Sidrería – Cervecera Ander · Andaluzia Kalea, 1, Bilbao</footer>
-</body>
-</html>
+:root{--g:#1E5A3C;--r:#B3261E;--ink:#14201A;--bg:#F2F5F0}
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',Arial,sans-serif;color:var(--ink);background:var(--bg)}
+h1,h2,h3,.logo{font-family:'Bricolage Grotesque',Arial,sans-serif;letter-spacing:-1px}
+.w{max-width:1180px;margin:0 auto;padding:0 24px}
+header{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:18px 24px;max-width:1180px;margin:auto}
+.logo{font-weight:800;font-size:26px}.logo b{color:var(--r)}nav a{color:var(--ink);text-decoration:none;font-weight:500;margin-left:20px}
+.hero{background:var(--g);color:#fff;padding:80px 0}.hero h1{font-size:clamp(42px,7vw,88px);line-height:.98;margin:12px 0 20px;max-width:850px}
+.hero p{font-size:19px;max-width:560px;color:#E4F0E8}.btn{display:inline-block;padding:15px 26px;border-radius:99px;font-weight:700;text-decoration:none;margin:8px 10px 0 0}
+.stats{display:flex;flex-wrap:wrap;gap:32px;margin-top:36px;padding-top:22px;border-top:1px solid #4c8266}.stats b{display:block;font:700 36px 'Bricolage Grotesque'}
+section{padding:64px 0 0}h2{font-size:42px;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.ph{position:relative;margin:0;border-radius:16px;overflow:hidden;min-height:260px;color:#fff}
+.ph .ic{position:absolute;inset:0 0 56px 0;display:flex;align-items:center;justify-content:center}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px 18px;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.ph small{display:block;font-weight:400;opacity:.9;margin-top:2px}
+.q{background:var(--ink);color:#fff;border-radius:16px;padding:28px;margin:0}.q p{margin:0 0 16px;line-height:1.55;font-size:17px}.q cite{color:#9fb8a9;font-size:14px;font-style:normal}
+.visit{background:#fff;border-radius:24px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;margin-bottom:64px}
+.map{border-radius:16px;min-height:200px;position:relative;background:#E4F0E8 linear-gradient(#cfe0d5 2px,transparent 2px),linear-gradient(90deg,#cfe0d5 2px,transparent 2px);background-size:48px 48px}
+.map i{position:absolute;left:50%;top:40%;width:28px;height:28px;margin:-14px;border-radius:50%;background:var(--r);border:4px solid #fff}
+.map span{position:absolute;left:14px;right:14px;bottom:14px;background:#fff;border-radius:12px;padding:10px 14px;font-size:15px}
+.tag{display:inline-block;background:#E4F0E8;color:var(--g);font-weight:700;padding:7px 14px;border-radius:99px;font-size:14px}
+footer{background:var(--ink);color:#9fb8a9;text-align:center;padding:28px;font-size:14px}
+</style></head><body>
+<header><div class="logo">Bar <b>Amalur</b></div><nav><a href="#carta">Carta</a><a href="#local">El local</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a></nav></header>
+<div class="hero"><div class="w"><div style="font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase;color:#CFE6D8">Bar restaurante · Deusto, Bilbao</div>
+<h1>Pintxos, raciones y buen ambiente en Deusto.</h1><p>Desayunos, tostas, hamburguesas, tortilla y bocadillos. Con terraza, para comer allí o para llevar.</p>
+<a class="btn" style="background:#fff;color:var(--ink)" href="#visitanos">Cómo llegar</a><a class="btn" style="border:2px solid #fff;color:#fff" href="#carta">Ver carta</a>
+<div class="stats"><div><b>4,7</b>54 reseñas en Google</div><div><b>10–20 €</b>por persona</div><div><b>23:00</b>hora de cierre</div></div></div></div>
+<section id="carta"><div class="w"><h2>La carta</h2><div class="grid"><figure class="ph" style="background:#B3261E"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><rect x="10" y="30" width="60" height="30" rx="8" fill="#D9A55B"/><rect x="14" y="34" width="52" height="22" rx="5" fill="#8DB84A"/><circle cx="26" cy="40" r="5" fill="#C0392B"/><circle cx="50" cy="48" r="5" fill="#C0392B"/><rect x="34" y="38" width="12" height="8" rx="3" fill="#F2D9A0"/></svg></div><img src="img/tosta.jpg" alt="Tosta de guacamole" onerror="this.remove()"><figcaption>Tosta de guacamole<small>Pollo crujiente, cherrys y frutos secos</small></figcaption></figure><figure class="ph" style="background:#1E5A3C"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><path d="M18 40a22 18 0 0144 0z" fill="#E0A34A"/><rect x="14" y="42" width="52" height="6" rx="3" fill="#2E7D4F"/><rect x="14" y="49" width="52" height="8" rx="4" fill="#6B3A22"/><path d="M18 58h44a0 0 0 010 0 8 8 0 01-8 8H26a8 8 0 01-8-8z" fill="#E0A34A"/></svg></div><img src="img/hamburguesa.jpg" alt="Hamburguesa con patatas" onerror="this.remove()"><figcaption>Hamburguesa con patatas<small>Muy recomendada</small></figcaption></figure><figure class="ph" style="background:#B3261E"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><path d="M12 62L30 24l18 38z" fill="#E8B84A"/><path d="M34 62l18-34 18 34z" fill="#D9A23A"/><circle cx="40" cy="58" r="9" fill="#7BAE3C"/><path d="M20 64h42" stroke="#F2D36B" stroke-width="5"/></svg></div><img src="img/nachos.jpg" alt="Nachos con queso y guacamole" onerror="this.remove()"><figcaption>Nachos con queso y guacamole<small>Para compartir</small></figcaption></figure><figure class="ph" style="background:#1E5A3C"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><path d="M16 34h38v14a16 16 0 01-16 16h-6a16 16 0 01-16-16z" fill="#fff"/><path d="M54 38h6a7 7 0 010 14h-6" fill="none" stroke="#fff" stroke-width="5"/><path d="M26 28c-3-5 3-7 0-12M38 28c-3-5 3-7 0-12" stroke="#fff" stroke-width="3" fill="none"/></svg></div><img src="img/desayuno.jpg" alt="Desayunos" onerror="this.remove()"><figcaption>Desayunos<small>Café y tostada 6,25 €</small></figcaption></figure></div></div></section>
+<section id="local"><div class="w"><h2>El local</h2><div class="grid"><figure class="ph" style="background:#1E5A3C"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><path d="M8 38a32 22 0 0164 0z" fill="#fff"/><path d="M40 38v30" stroke="#fff" stroke-width="4"/><path d="M26 68h28" stroke="#fff" stroke-width="4"/></svg></div><img src="img/terraza.jpg" alt="La terraza" onerror="this.remove()"><figcaption>La terraza</figcaption></figure><figure class="ph" style="background:#B3261E"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><rect x="20" y="30" width="34" height="38" rx="5" fill="#E8B84A"/><path d="M20 30a8 8 0 018-8 8 8 0 0114-3 8 8 0 0112 11z" fill="#fff"/><path d="M54 38h6a7 7 0 010 18h-6" fill="none" stroke="#fff" stroke-width="5"/></svg></div><img src="img/barra.jpg" alt="Barra y pintxos" onerror="this.remove()"><figcaption>Barra y pintxos</figcaption></figure><figure class="ph" style="background:#14201A"><div class="ic"><svg viewBox="0 0 80 80" style="width:96px;height:96px;opacity:.95"><rect x="10" y="30" width="60" height="30" rx="8" fill="#D9A55B"/><rect x="14" y="34" width="52" height="22" rx="5" fill="#8DB84A"/><circle cx="26" cy="40" r="5" fill="#C0392B"/><circle cx="50" cy="48" r="5" fill="#C0392B"/><rect x="34" y="38" width="12" height="8" rx="3" fill="#F2D9A0"/></svg></div><img src="img/platos.jpg" alt="Nuestros platos" onerror="this.remove()"><figcaption>Nuestros platos</figcaption></figure></div></div></section>
+<section id="opiniones"><div class="w"><h2>Lo que dicen los clientes</h2><div class="grid">
+<figure class="q"><p>Comida de 10, mucha variedad, la carta es extensa y todo riquísimo. Camareros majos y ambiente muy agradable.</p><cite>Cecilia · hace 2 meses</cite></figure>
+<figure class="q"><p>La tosta de guacamole, pollo crujiente, cherrys y frutos secos está espectacular. Buena atención, buena terraza y buen ambiente.</p><cite>Local Guide · hace 3 meses</cite></figure>
+<figure class="q"><p>Un desayuno de 10: tostada buenísima, tortillas con una pinta increíble y servicio muy amable.</p><cite>Vanesa · hace 4 meses</cite></figure></div></div></section>
+<section id="visitanos"><div class="w"><div class="visit"><div><h2 style="font-size:38px">Visítanos</h2><p style="font-size:18px;line-height:1.5"><b>Arturo Campión Kalea</b><br>Deusto, 48015 Bilbao, Bizkaia</p>
+<a class="btn" style="background:var(--r);color:#fff;margin:0" href="https://www.google.com/maps/search/?api=1&query=Bar+Amalur+Arturo+Campi%C3%B3n+Kalea+Bilbao">Abrir en Google Maps</a></div>
+<div style="line-height:2"><b>Horario:</b> cierre a las 23:00 [HORARIO COMPLETO]<br><b>Teléfono:</b> [TELÉFONO]<br><b>Servicio:</b> comer allí y para llevar<br><b>Terraza:</b> sí<br><span class="tag">Amigable con la comunidad LGBTQ+</span></div>
+<div class="map"><i></i><span><b>Bar Amalur</b><br>72JQ+R4 Bilbao</span></div></div></div></section>
+<footer>Bar Amalur · Deusto, Bilbao</footer></body></html>
